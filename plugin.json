@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "human-in-the-loop",
+  "version": "0.1.0",
+  "description": "Keep human questions and actions in a persistent task panel while the agent works.",
+  "author": {"name": "Julien"},
+  "repository": "https://github.com/julien-m/human-in-the-loop",
+  "license": "MIT",
+  "mcpServers": "./mcp.json",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "Human in the loop",
+        "shortDescription": "Persistent questions and actions for you",
+        "longDescription": "Answer, choose, mark done or decline in My tasks. Responses survive restarts and return to their conversation.",
+        "developerName": "Julien",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read", "Write"]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "human-in-the-loop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {"node": ">=22.18"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --test-timeout=10000 tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "package": "node scripts/build.mjs && node scripts/package.mjs",
+    "start": "node dist/server.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/core": "2.2.0",
+    "@modelcontextprotocol/server": "2.2.0",
+    "@modelcontextprotocol/ext-apps": "2.0.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.2.0",
+    "esbuild": "0.28.2",
+    "linkedom": "0.18.13"
+  }
+}

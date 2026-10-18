@@ -1,0 +1,9 @@
+Human in the loop is an independent implementation for Codex, inspired by
+the interaction model of Tzafrir Rehan's MIT-licensed Claude Code mod:
+https://github.com/tzafrir/human-in-the-loop
+
+The Claude-specific implementation and local user data are not bundled.
+No affiliation with or endorsement by Anthropic or OpenAI is implied.
+
+Bundled dependencies retain their own licenses in dist/licenses. Consult
+package-lock.json for exact versions, source archives and integrity hashes.

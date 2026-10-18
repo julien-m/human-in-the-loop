@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.claude/
+.codex/
+coverage/
+*.sqlite*
+*.db*
+.env*
+*.log
+artifacts/
+.DS_Store

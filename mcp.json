@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "human-in-the-loop": {
+      "command": "node",
+      "args": ["./dist/server.mjs"],
+      "cwd": "."
+    }
+  }
+}
